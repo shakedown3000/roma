@@ -1,0 +1,125 @@
+@use "_variables" as variables;
+@use "_font" as fonts;
+@use "_mixin" as mixins;
+
+* {
+    font-family: fonts.$fontSantio;
+}
+
+body {
+    background-image: url(../images/cleo-topper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header nav {
+    @include mixins.flexBox;
+
+    img {
+    width: variables.$nav_imageWidth;
+    }
+    a {
+    @include mixins.links;
+    }
+}
+
+header {
+    h1 {
+    color: variables.$main-color;
+    font-size: variables.$headerh1Font-size;
+    font-weight: variables.$headerh1Font-weight;
+    width: variables.$headerh1Width;
+    margin: variables.$headerh1margin;
+    text-decoration: variables.$headerh1text-decoration;
+    }
+    p {
+        font-family: fonts.$fontMr_Dafoe;
+        color: variables.$second-color;
+    }
+}
+
+.green {
+    p {
+        color: variables.$main-color;
+        width: variables.$greenParagraph-width;
+        margin: variables.$greenMargin;
+    }
+}
+
+.yellow {
+    img {
+        width: variables.$yellowImg-width;
+        font-size: variables.$paragraphFont-size;
+    }
+}
+
+// 
+    //     padding: 30px;
+    //     max-width: 900px;
+    //     margin: 5vh auto;
+    // }
+
+
+// // GLOBAL
+
+// * {
+//     padding: variables.$padding-start;
+//     margin: variables;
+//     box-sizing: variables.$bx-sizing;
+//     font-family: fonts.$fontRoboto;
+// }
+
+// header {
+//  @include mixins.flexPasta;
+//  h2 {
+//     margin: variables.$main-margin;
+//     color: variables.$main-color;
+//  }
+//  h3 {
+//     color: variables.$main_second_color;
+//  }
+//  p {
+//     font-size: variables.$default-font-size;
+//  }
+// }
+
+// main {
+//     padding: 30px;
+//     max-width: 900px;
+//     margin: 5vh auto;
+// }
+
+// .imageGallery {
+//     @include mixins.einGridtemplate;
+//     figure {
+//         width: 300px;
+//         img {
+//             border-radius: 30px;
+//         }
+//         figcaption {
+//             h2 {
+//                 color: variables.$main-color;
+//             }
+//             a {
+//                 button: {
+//                     @include mixins.textStyle(1rem, green, white);
+//                     @include mixins.borderStyle(
+//                     variables.$borderSize, 
+//                     variables.$borderStyle, 
+//                     variables.$borderColor);
+//                     width: 120px;
+//                     height: 35px;
+//                     margin: 10px 0;
+//                     &:hover {
+//                         color: yellow;
+//                         background-color: variables.$main-color;
+//                         border: none;
+//                         transition: 0.2s;
+//                         cursor: pointer;
+//                     }
+//                 }
+//             }
+//         }
+// }
+// }

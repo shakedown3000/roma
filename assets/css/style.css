@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: "Mr_Dafoe";
+  src: url(../fonts/Mr_Dafoe/MrDafoe-Regular.ttf);
+}
+@font-face {
+  font-family: "Santio";
+  src: url(../fonts/SANTIO/TTF/Santio\ regular.ttf);
+}
+* {
+  font-family: "Santio";
+}
+
+body {
+  background-image: url(../images/cleo-topper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+header nav img {
+  width: 20px;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header h1 {
+  color: white;
+  font-size: 66px;
+  font-weight: 900;
+  width: 15vw;
+  margin: 5vh auto auto 7vw;
+  text-decoration: uppercase;
+}
+header p {
+  font-family: "Mr_Dafoe";
+  color: #E7BC0E;
+}
+
+.green p {
+  color: white;
+  width: 25vw;
+  margin: 5vh auto auto 15vw;
+}
+
+.yellow img {
+  width: 100px;
+  font-size: 35px;
+}
+
+/*# sourceMappingURL=style.css.map */

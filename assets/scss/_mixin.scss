@@ -1,0 +1,31 @@
+@mixin flexBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+@mixin links {
+    text-decoration: none;
+    color: white;
+}
+
+
+// @mix.in einGridTemplate {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 15px;
+// }
+
+
+// @mixin textStyle($font-size, $color, $bg-color, $mixin) {
+//     font-size: $font-size;
+//     color: $color;
+//     background-color: $bg-color;
+//     border: $border;
+// }
+
+// @mixin borderStyle($brSize, $brStyle, $brColor) {
+//     border: $brSize; 
+// }
+
