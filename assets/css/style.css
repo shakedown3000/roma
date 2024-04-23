@@ -12,6 +12,8 @@
 }
 * {
   font-family: "Santio";
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -24,39 +26,114 @@ body {
 header nav {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  gap: 5px;
+  align-content: center;
+  gap: 10px;
+  padding: 1vw;
 }
 header nav img {
-  width: 20px;
+  width: 15px;
 }
 header nav a {
   text-decoration: none;
   color: white;
 }
 
+header {
+  height: 100vh;
+  width: 100vw;
+}
 header h1 {
   color: white;
-  font-size: 66px;
+  font-size: 84px;
   font-weight: 900;
-  width: 15vw;
-  margin: 5vh auto auto 7vw;
+  width: 25vw;
+  margin: 5vw 5vw;
   text-decoration: uppercase;
 }
 header p {
+  margin: 5vw 5vw;
+  font-size: 32px;
   font-family: "Mr_Dafoe";
   color: #E7BC0E;
 }
 
+.green {
+  height: 100vh;
+  width: 100vw;
+}
 .green p {
+  font-size: 36px;
+  margin: 20vh auto 0 20vw;
+  min-width: 300px;
+  color: #6BC1A3;
+  width: 20vw;
+}
+.green p span {
   color: white;
-  width: 25vw;
-  margin: 5vh auto auto 15vw;
+  background: rgba(0, 0, 0, 0.309);
 }
 
+.yellow {
+  margin: 15vh auto 15vh 30vw;
+}
 .yellow img {
   width: 100px;
-  font-size: 35px;
+  padding-bottom: 5vh;
+}
+.yellow p:first-of-type,
+.yellow p:nth-of-type(2) {
+  font-size: 139px;
+  color: #E7BC0E;
+  margin: 0;
+  padding: 1rem 0;
+}
+.yellow p:nth-of-type(3) {
+  color: #E7BC0E;
+  font-size: 39px;
+}
+.yellow p:nth-of-type(3) span {
+  color: white;
+  background: rgba(0, 0, 0, 0.309);
+}
+
+.third {
+  background-image: url(../images/kid.png), url(../images/see.png);
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  font-size: 47px;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+}
+
+footer {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  padding: 10vh;
+  margin: 0;
+}
+footer p {
+  font-size: 84px;
+  font-weight: 900;
+  width: 20vw;
+  text-decoration: uppercase;
+}
+footer button {
+  width: 10vw;
+  height: 3rem;
+  margin-top: 10vh;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  border: 1px solid white;
+}
+footer button:hover {
+  box-shadow: 10px 10px white;
 }
 
 /*# sourceMappingURL=style.css.map */

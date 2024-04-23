@@ -1,8 +1,21 @@
+@use "_variables" as variables;
+@use "_font" as fonts;
+
 @mixin flexBox {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    gap: 5px;
+    align-content: center;
+    gap: 10px;
+    padding: 1vw;
+}
+
+@mixin h1 {
+    color: variables.$main-color;
+    font-size: variables.$headerh1Font-size;
+    font-weight: variables.$headerh1Font-weight;
+    width: 25vw;
+    margin: 5vw 5vw;
+    text-decoration: variables.$headerh1text-decoration;   
 }
 
 @mixin links {
@@ -10,13 +23,77 @@
     color: white;
 }
 
+@mixin highlight {
+    background: rgba(0, 0, 0, 0.309);
+}
 
-// @mix.in einGridTemplate {
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     gap: 15px;
-// }
+@mixin scroll {
+    margin: 5vw 5vw;
+    font-size: 32px;
+    font-family: fonts.$fontMr_Dafoe;
+    color: variables.$second-color;
+}
 
+@mixin green {
+    font-size: 36px;
+    margin: 20vh auto 0 20vw;
+    min-width: 300px;
+    color: variables.$third-color;
+    width: variables.$greenParagraph-width;
+}
+
+@mixin yellow_image {
+    width: variables.$yellowImg-width;
+    padding-bottom: 5vh;
+}
+
+@mixin yellow_section {
+    margin: 15vh auto 15vh 30vw;
+}
+
+@mixin yellow-paragraph {
+    font-size: 139px;
+    color: variables.$second-color;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+@mixin yellow-paragraph-last {
+    color: variables.$second-color;
+    font-size: 39px;
+}
+
+@mixin third {
+    background-image: url(../images/kid.png), url(../images/see.png);
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    font-size: 47px;
+    padding: 0;
+    margin: 0;
+    font-family: fonts.$fontInter;
+}
+
+@mixin footer {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    color: variables.$main-color;
+    padding: 10vh;
+    margin: 0;
+}
+
+@mixin footer_button {
+    width: 10vw;
+    height: 3rem;
+    margin-top: 10vh;
+    background-color: transparent;
+    color: variables.$main-color;
+    font-size: 20px;
+    border: 1px solid white;
+}
 
 // @mixin textStyle($font-size, $color, $bg-color, $mixin) {
 //     font-size: $font-size;
